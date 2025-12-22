@@ -26,7 +26,6 @@ def main(args):
 
     uciqe_values = []
     uqims_values=[]
-    uqims_values=[]
     uicm_values=[]
     uism_values=[]
     uicomn_values=[]
@@ -251,4 +250,5 @@ if __name__ == '__main__':
     parser.add_argument('--device', type=str, default='cuda:0' if torch.cuda.is_available() else 'cpu')
 
     args = parser.parse_args()
+
     main(args)
