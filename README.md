@@ -41,7 +41,7 @@ We evaluate DIVER across eight diverse datasets spanning shallow, deep, and high
 
 ### 1) Clone the repository
 ```bash
-git clone https://github.com/AIRLabIISc/REVERSEA.git
+https://github.com/AIRLabIISc/DIVER.git
 ```
 
 ### 2) Create and activate a virtual environment
@@ -59,7 +59,7 @@ pip install -r req.txt
 ## Running
 
 The easiest way to run ReverSea is using the provided notebook:
-train+inf.ipynb
+training+inference.ipynb
 
 
 
