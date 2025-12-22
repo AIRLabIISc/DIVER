@@ -12,7 +12,7 @@ We evaluate DIVER across eight diverse datasets spanning shallow, deep, and high
 
 
 <div align="center">
-  <img src="Reversea.png" width="75%"/>
+  <img src="DIVER_BlockDaigram_final.png" width="75%"/>
 </div>
 
 ## Highlights
