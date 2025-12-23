@@ -4,11 +4,18 @@
 [![Framework](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?&logo=PyTorch&logoColor=white)](https://pytorch.org/)
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 
-DIVER, an unsupervised domain-invariant restoration architecture that unifies empirical enhancement and physics-guided modeling. 
+# DIVER: Domain-Invariant Visual Enhancement and Restoration
 
-Underwater imaging is severely affected by wavelength-dependent attenuation, scattering, and non-uniform illumination, all of which vary considerably across water types and depths. To address these challenges, we introduce an unsupervised Domain-Invariant Visual Enhancement and Restoration (DIVER) framework that integrates empirical corrections with physics-guided modeling to achieve robust image enhancement. The architecture begins with either IlluminateNet, which performs adaptive luminance enhancement, or the Spectral Equalization Filter, which normalizes spectral distributions. This is followed by the Adaptive Optical Correction Module (AOCM), which refines hue and contrast through channel-adaptive filtering, and the Hydro-OpticNet (HON) block, which leverages physics-constrained learning to compensate for backscatter and wavelength-dependent attenuation. Tunable parameters in IlluminateNet and Hydro-OpticNet are optimized via unsupervised training with a composite loss function.
-We evaluate DIVER across eight diverse datasets spanning shallow, deep, and highly turbid environments, including naturally low-lit and artificially illuminated scenarios, using both reference and non-reference metrics. While state-of-the-art methods such as WaterNet, UDNet, and Phaseformer perform reasonably well in shallow-water conditions, they degrade significantly in deeper, unevenly illuminated, or artificially lit environments. In contrast, DIVER consistently achieves best or near-best results across all datasets, underscoring its domain-invariant capability. Notably, on the low-lit SeaThru dataset, where color-palette references enable quantitative evaluation of color restoration accuracy, DIVER achieves at least a 4.9% improvement over existing methods. Beyond visual quality metrics, DIVER also enhances downstream robotic perception tasks, improving keypoint repeatability and feature matching performance using ORB descriptors. Collectively, these findings demonstrate that DIVER is both robust and domain-invariant across a wide range of underwater imaging conditions.
+Underwater images degrade due to wavelength-dependent attenuation, scattering, and non-uniform illumination. DIVER addresses these issues using a modular, physics-aware pipeline that generalizes across water types, depths, and lighting conditions.
 
+DIVER is an **unsupervised, domain-invariant underwater image enhancement framework** that combines empirical enhancement with physics-guided modeling to handle diverse underwater conditions. DIVER provides **robust, physics-aware, and domain-invariant enhancement** for real-world underwater imaging and robotic perception. It is evaluated on **8 underwater datasets** (shallow, deep, turbid, low-light, and artificial illumination) and outperforms or matches state-of-the-art methods (WaterNet, UDNet, Phaseformer) across domains
+
+## Architecture
+- **IlluminateNet**: for adaptive luminance enhancement OR **Spectral Equalization Filter (SEF)**: normalizes spectral imbalance.
+- **Adaptive Optical Correction Module (AOCM)**: Refines hue and contrast via channel-adaptive filtering.
+- **Hydro-OpticNet (HON)**: Physics-constrained network that compensates for backscatter and wavelength-dependent attenuation.
+
+All modules are trained **unsupervised** using a composite loss function.
 
 
 <div align="center">
