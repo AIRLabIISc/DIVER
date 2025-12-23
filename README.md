@@ -12,7 +12,7 @@ We evaluate DIVER across eight diverse datasets spanning shallow, deep, and high
 
 
 <div align="center">
-  <img src="DIVER_BlockDaigram_final.png" width="75%"/>
+  <img src="DIVER_BlockDaigram.png" width="75%"/>
 </div>
 
 ## Highlights
@@ -23,7 +23,7 @@ We evaluate DIVER across eight diverse datasets spanning shallow, deep, and high
 ---
 
 ## Repository Structure (Quick Tour)
-- `train+inf.ipynb` : **Training + Inference** notebook (main entrypoint)
+- `training+inference.ipynb` : **Training + Inference** notebook (main entrypoint)
 -  `IlluminateNet_Checkpoints/` : pretrained weights for Seethru and Fishtrac datasets for preprocessing
 - `Diver_Checkpoints/` : pretrained weights for all benchmark Datasets
 - `req.txt` : python dependencies
@@ -58,7 +58,7 @@ pip install -r req.txt
 
 ## Running
 
-The easiest way to run ReverSea is using the provided notebook:
+To run DIVER use the provided notebook:
 training+inference.ipynb
 
 
