@@ -6,14 +6,14 @@
 
 # DIVER: Domain-Invariant Visual Enhancement and Restoration
 
-Underwater images degrade due to wavelength-dependent attenuation, scattering, and non-uniform illumination. DIVER addresses these issues using a modular, physics-aware pipeline that generalizes across water types, depths, and lighting conditions.
+Underwater images degrade due to wavelength-dependent attenuation, scattering, and non-uniform illumination. 
 
-DIVER is an **unsupervised, domain-invariant underwater image enhancement framework** that combines empirical enhancement with physics-guided modeling to handle diverse underwater conditions. DIVER provides **robust, physics-aware, and domain-invariant enhancement** for real-world underwater imaging and robotic perception. It is evaluated on **8 underwater datasets** (shallow, deep, turbid, low-light, and artificial illumination) and outperforms or matches state-of-the-art methods (WaterNet, UDNet, Phaseformer) across domains
+DIVER addresses these issues using a modular, physics-aware pipeline that generalizes across water types, depths, and lighting conditions. It is an **unsupervised, domain-invariant underwater image enhancement framework** that combines empirical enhancement with physics-guided modeling to handle diverse underwater conditions. DIVER provides **robust, physics-aware, and domain-invariant enhancement** for real-world underwater imaging and robotic perception. It is evaluated on **8 underwater datasets** (shallow, deep, turbid, low-light, and artificial illumination) and outperforms or matches state-of-the-art methods (WaterNet, UDNet, Phaseformer) across underwater domains.
 
 ## Architecture
-- **IlluminateNet**: for adaptive luminance enhancement OR **Spectral Equalization Filter (SEF)**: normalizes spectral imbalance.
-- **Adaptive Optical Correction Module (AOCM)**: Refines hue and contrast via channel-adaptive filtering.
-- **Hydro-OpticNet (HON)**: Physics-constrained network that compensates for backscatter and wavelength-dependent attenuation.
+- **IlluminateNet**: for adaptive luminance enhancement OR **Spectral Equalization Filter (SEF)**: normalizes spectral imbalance
+- **Adaptive Optical Correction Module (AOCM)**: Refines hue and contrast via channel-adaptive filtering
+- **Hydro-OpticNet (HON)**: Physics-constrained network that compensates for backscatter and wavelength-dependent attenuation
 
 All modules are trained **unsupervised** using a composite loss function.
 
