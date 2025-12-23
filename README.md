@@ -23,14 +23,13 @@ All modules are trained **unsupervised** using a composite loss function.
 </div>
 
 ## Highlights
-- **No preprocessing required**
 - **Depth-aware enhancement** 
-- Effective in all underwater lighting conditions
+- Effective against all underwater conditions
 
 ---
 
 ## Repository Structure (Quick Tour)
-- `training+inference.ipynb` : **Training + Inference** notebook (main entrypoint)
+- `DIVER/training+inference.ipynb` : **Training + Inference** notebook (main entrypoint)
 -  `IlluminateNet_Checkpoints/` : pretrained weights for Seethru and Fishtrac datasets for preprocessing
 - `Diver_Checkpoints/` : pretrained weights for all benchmark Datasets
 - `req.txt` : python dependencies
@@ -39,7 +38,6 @@ All modules are trained **unsupervised** using a composite loss function.
 
 ## Requirements
 - **Python 3.12** (recommended / tested)
-- Works best on **Linux + NVIDIA GPU** (CUDA) for training
 - Install dependencies from `req.txt`
 
 ---
@@ -65,7 +63,7 @@ pip install -r req.txt
 
 ## Usage
 
-To run DIVER use the provided notebook:
+To execute DIVER use the provided notebook:
 training+inference.ipynb
 
 
