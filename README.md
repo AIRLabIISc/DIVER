@@ -30,8 +30,8 @@ All modules are trained **unsupervised** using a composite loss function.
 
 ## Repository Structure (Quick Tour)
 - `DIVER/training+inference.ipynb` : **Training + Inference** notebook (main entrypoint)
--  `IlluminateNet_Checkpoints/` : pretrained weights for Seethru and Fishtrac datasets for preprocessing
-- `Diver_Checkpoints/` : pretrained weights for all benchmark Datasets
+-  `DIVER/IlluminateNet_Checkpoints/` : pretrained weights for Seethru and Fishtrac datasets for preprocessing
+- `DIVER/Diver_Checkpoints/` : pretrained weights for all benchmark Datasets
 - `req.txt` : python dependencies
 
 ---
@@ -47,6 +47,7 @@ All modules are trained **unsupervised** using a composite loss function.
 ### 1) Clone the repository
 ```bash
 https://github.com/AIRLabIISc/DIVER.git
+cd DIVER
 ```
 
 ### 2) Create and activate a virtual environment
