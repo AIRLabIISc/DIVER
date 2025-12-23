@@ -56,7 +56,7 @@ pip install --upgrade pip
 pip install -r req.txt
 ```
 
-## Running
+## Usage
 
 To run DIVER use the provided notebook:
 training+inference.ipynb
