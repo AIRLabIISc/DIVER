@@ -64,9 +64,9 @@ pip install -r req.txt
 
 ## Usage
 
-To execute DIVER use the provided notebook:
+- To execute DIVER use the provided notebook:
 training+inference.ipynb
-Refer Processing Workflow - Training and Inference.pdf for details
+- Refer Processing Workflow - Training and Inference.pdf for details
 
 
 
