@@ -66,6 +66,7 @@ pip install -r req.txt
 
 To execute DIVER use the provided notebook:
 training+inference.ipynb
+Refer Processing Workflow - Training and Inference.pdf for details
 
 
 
